@@ -50,8 +50,6 @@ Student & Student::operator=(const Student &right) {
   {
     return (*this);
   }
-  if(name !=nullptr){
-  delete[] name;}
   
   this->setName(right.getName());
   this->setPerm(right.getPerm());
