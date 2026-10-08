@@ -37,7 +37,8 @@ Student::Student(const Student &orig) {
 }
 
 Student::~Student() {
-  delete[] name;
+  if(name !=nullptr){
+  delete[] name;}
 }
 
 Student & Student::operator=(const Student &right) {
@@ -49,8 +50,8 @@ Student & Student::operator=(const Student &right) {
   {
     return (*this);
   }
-
-  delete[] name;
+  if(name !=nullptr){
+  delete[] name;}
   
   this->setName(right.getName());
   this->setPerm(right.getPerm());
