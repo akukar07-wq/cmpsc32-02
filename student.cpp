@@ -20,7 +20,7 @@ void Student::setPerm(const int permNumber) {
 }
 
 void Student::setName(const char * const name) {
-  if(this->name !=nullptr)
+  if(this->name !=NULL)
   {
     delete[] this->name;
   }
